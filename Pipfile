@@ -28,7 +28,7 @@ pytest-catchlog = "*"
 
 # Coverage
 coverage = "~=4.0"
-"coverage.space" = "~=0.8"
+coverage-space = "*"
 
 # Documentation
 mkdocs = "*"
