@@ -12,7 +12,7 @@ def get_word_list(text):
     node = node.next
     while node:
         splitted = node.feature.split(',')
-        word = splitted[6]
+        word = node.surface
         part_of_speech = splitted[0]
         if part_of_speech == 'BOS/EOS':
             break
