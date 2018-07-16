@@ -6,5 +6,5 @@ setup(name='MeCabOnigiri',
       author='uehara1414',
       author_email='akiya.noface@gmail.com',
       url='https://github.com/uehara1414/MeCabOnigiri',
-      packages=['MeCabOnigiri'],
+      packages=['MaCabOnigiri'],
       )
