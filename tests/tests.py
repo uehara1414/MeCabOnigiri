@@ -1,5 +1,6 @@
 import unittest
 from MeCabOnigiri import get_word_list
+from MeCabOnigiri.models import Token
 
 
 class Test(unittest.TestCase):
@@ -16,3 +17,9 @@ class Test(unittest.TestCase):
 
     def test_hash(self):
         hash(get_word_list('お金が欲しい')[0])
+
+    def test_set(self):
+        set1 = set(get_word_list('名誉が欲しい'))
+        set2 = set(get_word_list('お金が欲しいな'))
+        self.assertSetEqual(set1 & set2,
+                            {Token('が', '助詞'), Token('欲しい', '形容詞')})
