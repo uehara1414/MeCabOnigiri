@@ -9,3 +9,6 @@ class Token:
 
     def __str__(self):
         return self.__repr__()
+
+    def __eq__(self, other):
+        return self.word == other.word and self.part_of_speech == other.part_of_speech
