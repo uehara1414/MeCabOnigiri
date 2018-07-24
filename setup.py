@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(name='MeCabOnigiri',
-      version='0.1.3',
+      version='0.1.4',
       description='Python Distribution Utilities',
       author='uehara1414',
       author_email='akiya.noface@gmail.com',
