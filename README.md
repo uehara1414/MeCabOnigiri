@@ -18,14 +18,6 @@ Install MeCabOnigiri with pip:
 $ pip install MeCabOnigiri
 ```
 
-or directly from the source code:
-
-```sh
-$ git clone https://github.com/uehara1414/MeCabOnigiri.git
-$ cd MeCabOnigiri
-$ python setup.py install
-```
-
 # Usage
 
 After installation, the package can imported:
@@ -34,4 +26,10 @@ After installation, the package can imported:
 $ python
 >>> import MeCabOnigiri
 >>> MeCabOnigiri.__version__
+```
+
+## Test
+```sh
+pipenv install --dev
+pipenv run nosetests
 ```
