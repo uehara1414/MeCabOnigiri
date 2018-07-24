@@ -10,3 +10,6 @@ class Test(unittest.TestCase):
 
     def test_2(self):
         self.assertListEqual(get_word_list('お金が欲しい'), get_word_list('お金が欲しい'))
+
+    def test_3(self):
+        get_word_list('紙幣が何かわからない')
