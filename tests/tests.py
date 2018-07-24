@@ -13,3 +13,6 @@ class Test(unittest.TestCase):
 
     def test_3(self):
         get_word_list('紙幣が何かわからない')
+
+    def test_hash(self):
+        hash(get_word_list('お金が欲しい')[0])

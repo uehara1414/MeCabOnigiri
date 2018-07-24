@@ -12,3 +12,6 @@ class Token:
 
     def __eq__(self, other):
         return self.word == other.word and self.part_of_speech == other.part_of_speech
+
+    def __hash__(self):
+        return hash(str(self))
