@@ -1,5 +1,6 @@
 import unittest
 from MeCabOnigiri import get_word_list
+from MeCabOnigiri.tagger import get_dic_path
 from MeCabOnigiri.models import Token
 
 
@@ -23,3 +24,6 @@ class Test(unittest.TestCase):
         set2 = set(get_word_list('お金が欲しいな'))
         self.assertSetEqual(set1 & set2,
                             {Token('が', '助詞'), Token('欲しい', '形容詞')})
+
+    def test_get_dic_path(self):
+        self.assertEqual(get_dic_path(), '/usr/local/lib/mecab/dic/mecab-ipadic-neologd')
