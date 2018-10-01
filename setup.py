@@ -7,4 +7,7 @@ setup(name='MeCabOnigiri',
       author_email='akiya.noface@gmail.com',
       url='https://github.com/uehara1414/MeCabOnigiri',
       packages=['MeCabOnigiri'],
+      install_requires=[
+            'mecab-python3',
+      ],
       )
