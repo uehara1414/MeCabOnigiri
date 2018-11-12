@@ -1,4 +1,3 @@
-from .tagger import get_mecab_tagger
 from .models import Token
 
 
